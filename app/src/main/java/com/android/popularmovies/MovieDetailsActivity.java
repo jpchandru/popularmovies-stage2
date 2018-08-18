@@ -41,10 +41,8 @@ public class MovieDetailsActivity extends AppCompatActivity {
     private TextView dateRelease;
     private TextView desc;
     private ImageView poster, loveIcon;
-    private List<Video> trailersList = new ArrayList<>();
     private VideoAdapter videoAdapter;
     private RecyclerView vRecycleView;
-    private List<Review> reviewsList = new ArrayList<>();
     private ReviewAdapter reviewAdapter;
     private RecyclerView rRecycleView;
     private Button favBtn;
@@ -200,10 +198,8 @@ public class MovieDetailsActivity extends AppCompatActivity {
             List<Video> videoList = new ArrayList<Video>();
             try {
                 movieSearchResults = NetworkUtils.getResponseFromHTTPUrl(searchUrl);
-                //videoRespond = new VideoRespond();
                 videoList.clear();
                 videoList = JsonUtils.parseMovieTrailerJson(movieSearchResults);
-                //if(0 < videoList.size()) videoRespond.setVideoslist(videoList);
             } catch (Exception e) {
                 e.printStackTrace();
             }
