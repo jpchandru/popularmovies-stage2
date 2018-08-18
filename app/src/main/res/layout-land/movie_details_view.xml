@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/detail_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/tv_detailActivity_poster_image"
+            android:layout_width="170dp"
+            android:layout_height="300dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="top|left"
+            android:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:id="@+id/titleSection"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/tv_detailActivity_poster_image"
+            android:background="@color/cyan">
+
+            <TextView
+                android:id="@+id/tv_detailActivity_Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|center"
+                android:layout_marginLeft="48dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@+id/tv_detailActivity_poster_image"
+                android:scaleType="fitCenter"
+                android:textColor="@color/textwhite"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/titleSection"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/tv_detailActivity_poster_image">
+
+            <LinearLayout
+                android:id="@+id/infoSection"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/titleSection"
+                android:layout_marginTop="3dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_detailActivity_DateRelease_header"
+                    style="@style/Header"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/INFO_DATERELEASE"
+                    android:textColor="@color/colorPrimary"
+                    android:textColorLink="@color/cyan"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_detailActivity_DateRelease"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="125dp"
+                    android:layout_marginStart="125dp"
+                    android:layout_marginTop="-24dp"
+                    android:layout_toRightOf="@+id/tv_detailActivity_DateRelease_header"
+                    android:text="@string/INFO_DATERELEASE"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18dp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_detailActivity_Rating_header"
+                        style="@style/Header"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginTop="15dp"
+                        android:text="@string/INFO_RATING"
+                        android:textColor="@color/colorPrimary"
+                        android:textColorLink="@color/cyan"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_detailActivity_Rating"
+                        style="@style/Info"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="false"
+                        android:layout_alignParentStart="false"
+                        android:layout_centerVertical="false"
+                        android:layout_marginLeft="67dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_toRightOf="@+id/tv_detailActivity_Rating_header"
+                        android:text="@string/INFO_RATING"
+                        android:textColor="@color/colorPrimary"
+                        android:textColorLink="@color/cyan"
+                        android:textSize="18dp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="15dp">
+
+                    <Button
+                        android:id="@+id/btn_favorite"
+                        style="@android:style/Widget.Button.Toggle"
+                        android:layout_width="105dp"
+                        android:layout_height="45dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginBottom="1dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="1dp"
+                        android:background="@color/blue"
+                        android:text="@string/add_to_favorite"
+                        android:textAllCaps="true"
+                        android:textColor="@android:color/black"
+                        android:textColorLink="@color/textwhite"
+                        android:textIsSelectable="false"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@+id/love_icon"
+                        android:layout_width="45dp"
+                        android:layout_height="50dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_toRightOf="@+id/btn_favorite"
+                        android:src="@drawable/icons8_love_64" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="11dp">
+
+                    <TextView
+                        android:id="@+id/overview_header"
+                        style="@style/Header"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginTop="15dp"
+                        android:text="@string/INFO_DESCRIPTION"
+                        android:textColor="@color/colorPrimary"
+                        android:textColorLink="@color/cyan"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_detailActivity_desc"
+                        style="@style/Info"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="false"
+                        android:layout_alignParentStart="false"
+                        android:layout_centerVertical="false"
+                        android:layout_marginLeft="27dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_toEndOf="@id/overview_header"
+                        android:layout_toRightOf="@id/overview_header"
+                        android:text="@string/INFO_DESCRIPTION"
+                        android:textColor="@color/colorPrimary"
+                        android:textColorLink="@color/cyan"
+                        android:textSize="18dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/trailer_header"
+                        style="@style/Header"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginTop="15dp"
+                        android:text="@string/INFO_TRAILERS"
+                        android:textColor="@color/colorPrimary"
+                        android:textColorLink="@color/cyan"
+                        android:textStyle="bold" />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rv_trailer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="false"
+                        android:layout_alignParentStart="false"
+                        android:layout_centerVertical="false"
+                        android:layout_marginLeft="55dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_toEndOf="@+id/trailer_header"
+                        android:layout_toRightOf="@+id/trailer_header"
+                        android:paddingBottom="25dp"
+                        android:textColor="@color/blue"
+                        android:textColorLink="@color/cyan"
+                        android:textSize="18dp"></android.support.v7.widget.RecyclerView>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/review_header"
+                        style="@style/Header"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginTop="15dp"
+                        android:text="@string/INFO_REVIEWS"
+                        android:textColor="@color/colorPrimary"
+                        android:textColorLink="@color/cyan"
+                        android:textStyle="bold" />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rv_review"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="56dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_toEndOf="@+id/review_header"
+                        android:layout_toRightOf="@+id/review_header"
+                        android:paddingBottom="80dp"
+                        android:textColor="@color/blue"
+                        android:textColorLink="@color/cyan"
+                        android:textSize="18dp"></android.support.v7.widget.RecyclerView>
+                </RelativeLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+</LinearLayout>

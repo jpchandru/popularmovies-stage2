@@ -1,0 +1,47 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="Transparent" parent="AppTheme">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="MenuOptions" parent="Theme.AppCompat">
+        <item name="actionBarItemBackground">@color/colorPrimary</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="actionMenuTextColor">#FFFFFF</item>
+    </style>
+
+    <style name="Header">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/Header</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:layout_marginLeft">@dimen/activity_horizontal_margin</item>
+        <item name="android:layout_marginRight">4dp</item>
+    </style>
+
+    <style name="Info">
+        <item name="android:layout_marginRight">8dp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textColor">@color/font</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="LinkUrl">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textColor">@color/link</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+</resources>

@@ -1,2 +1,2 @@
-# popularmovies-stage2
-popularmovies with db, recyclerview and parcelable
+# popularmovies-stage1
+Popular movies - stage 1

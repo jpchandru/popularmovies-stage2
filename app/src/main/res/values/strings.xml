@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">POPULAR MOVIES</string>
+    <string name="details_name">MOVIE DETAILS</string>
+    <!-- menu items -->
+    <string name="action_top_rated">Top Rated</string>
+    <string name="action_most_popular">Most Popular</string>
+    <string name="action_favourite">Favourite</string>
+    <!-- Movie poster content description -->
+    <string name="movie_poster_content_description">Movie Poster</string>
+    <string name="add_to_favorite">mark as\nfavorite</string>
+    <string name="remove_from_favorite">remove from\nfavorite</string>
+    <!--UI items -->
+    <string name="INFO_TITLE">Title</string>
+    <string name="INFO_RATING">Rating</string>
+    <string name="INFO_DATERELEASE">Release Date</string>
+    <string name="INFO_DESCRIPTION">Description</string>
+    <string name="INFO_POSTERLINK">POSTERLINK</string>
+    <string name="INFO_REVIEWS">Reviews</string>
+    <string name="INFO_TRAILERS">Trailers</string>
+</resources>

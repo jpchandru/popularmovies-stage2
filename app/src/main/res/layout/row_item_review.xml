@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/ic_review"
+            android:layout_width="25dp"
+            android:layout_height="22dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="12dp"
+            android:src="@drawable/icons8_talk_64" />
+
+        <TextView
+            android:id="@+id/tv_author"
+            style="@style/Info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/ic_review"
+            android:layout_toRightOf="@+id/ic_review"
+            android:text="Gibson Anderson" />
+
+        <TextView
+            android:id="@+id/tv_review_url"
+            style="@style/LinkUrl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@id/ic_review"
+            android:layout_toRightOf="@+id/ic_review"
+            android:text="" />
+    </RelativeLayout>
+</LinearLayout>
