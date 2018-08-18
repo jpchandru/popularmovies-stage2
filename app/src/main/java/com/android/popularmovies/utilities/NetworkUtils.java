@@ -14,7 +14,7 @@ public class NetworkUtils {
     private final static String PARAM_QUERY = "api_key";
     //API_Key
     // TODO KEYIN APIKEY HERE
-    private final static String API_KEY = "869ba8ce18967f203b2686832bc98be9";
+    private final static String API_KEY = "";
     private static String paramPath = "";
 
     public static URL buildUrl(String movieDataSearchQuery){
